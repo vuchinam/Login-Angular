@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="login-form">
+    <div class="login-form-main">
+      <h1>Wellcome Back!</h1>
+      <h5>please enter your email & password !!</h5>
+      <form [formGroup]="loginForm" (ngSubmit)="signIn()">
+        <div class="form-input">
+          <label for="inputEmail" class="form-label">Email : </label>
+          <input
+            type="email"
+            id="inputEmail"
+            placeholder="enter your email..."
+            class="form-control"
+            formControlName="email"
+          />
+        </div>
+        <div class="form-input">
+          <label for="inputPassword" class="form-label">Password : </label>
+          <input
+            type="password"
+            id="inputPassword"
+            placeholder="enter your password..."
+            class="form-control"
+            formControlName="password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        <p class="page-title">
+          Don't have an account ? <a routerLink="/register">Sign Up</a>
+        </p>
+      </form>
+    </div>
+
+    <div class="image-form">
+      <img
+        src="https://images.unsplash.com/photo-1684697526198-d1b2c88755fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+        alt="img"
+      />
+    </div>
+  </div>
+</div>

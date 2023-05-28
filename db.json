@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Kevil Adam",
+      "email": "kevil123@gmail.com",
+      "password": "123456789",
+      "mobile": 249217822,
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
